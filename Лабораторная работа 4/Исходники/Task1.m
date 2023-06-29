@@ -1,4 +1,5 @@
-clear; clc;
+clear; 
+clc;
 syms x;
 format long
 y=@(x)exp(x);

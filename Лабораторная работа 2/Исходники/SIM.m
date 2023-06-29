@@ -1,9 +1,8 @@
 function[Xnext] = SIM(fi,x0,e)
-    X=x0;
-    Xnext=X+2*e;
-    n=0;
-    while(abs(Xnext-X)>=e)
-        X=Xnext;
+    Xnext=fi(x0);
+    n=1;
+    while(abs(Xnext-x0)>e)
+        x0=Xnext;
         Xnext=fi(Xnext);
         n=n+1;
     end
