@@ -39,6 +39,6 @@ end
 % P(2)
 w=@(x)prod(x-t)
 maxw=w(fminbnd(@(x)(-1)*prod(x-t),t(1),t(length(t))))
-Maxw=pi^5/factorial(5)*maxw
+Maxw=pi^5/factorial(4)*maxw
 Pr=@(x)abs(P(x)-y(x))
 MaxPr=Pr(fminbnd(Pr,t(1),t(length(t))))
